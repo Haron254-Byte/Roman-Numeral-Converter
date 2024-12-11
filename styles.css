@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+  min-height: 100vh;
+  background-color: #f7fafc;
+  font-family: 'Roboto', sans-serif;
+  color: #333; 
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+h1, h3 {
+  font-size: 3.5vw;
+  margin: 10px 0;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  color: #007bff;
+  font-weight: 700;
+}
+
+h3 {
+  color: #666;
+  font-weight: 400;
+}
+
+#output {
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  top: 10px;
+  width: 70vw;
+  max-width: 500px;
+  background-color: #333;
+  color: #fff;
+  height: 15vh;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#output:hover {
+  transform: translateY(-10px);
+  opacity: 0.9;
+}
+
+input {
+  width: 30vw;
+  max-width: 400px;
+  height: 13vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  margin-top: 12px;
+  width: 30vw;
+  max-width: 400px;
+  height: 45px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #003f7f;
+  transform: scale(0.98);
+}
+
+.inputs {
+  height: 30vw;
+  max-height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px;
+  width: 70vw;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.inputs:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 10px;
+  }
+
+  input, button {
+    width: 70vw;
+   
+  }
+  #output,.inputs{
+    width: 70vw;
+  }
+
+  h1, h3 {
+    font-size: 5vw;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-out;
+}
+
