@@ -116,8 +116,8 @@ button:active {
 
 @media (max-width: 768px) {
   body {
-   padding: 0;
-    
+   
+    padding: 10px !important;
   }
    button{
      
@@ -139,7 +139,6 @@ button:active {
   height: 15vh !important;
   }
   .inputs{
-    margin: 10px 70px;;
     height: 30vh !important ;
     display: flex !important;
     flex-direction: column !important ;
@@ -148,6 +147,12 @@ button:active {
     width: 70vw !important;
     
   }
+
+  h1, h3,button {
+    font-size: 5vw !important;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
