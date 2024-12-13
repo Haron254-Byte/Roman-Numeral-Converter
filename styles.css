@@ -114,20 +114,38 @@ button:active {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   body {
+   
     padding: 10px;
   }
+   button{
+     
+  width: 60vw;
+  height: 6vh;
+    
+   }
 
-  input, button {
-    width: 70vw;
-   
+  input {
+   width: 60vw;
+  height: 10vh;
   }
-  #output,.inputs{
+ 
+  #output{
+    font-size: 6vw;
+  height: 15vh;
+  }
+  .inputs{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 70vw;
+    
   }
 
-  h1, h3 {
+  h1, h3,button {
     font-size: 5vw;
   }
 }
